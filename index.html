@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woramet Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .role {
+            color: #666;
+            font-size: 18px;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .skill-bar {
+            background: #f0f0f0;
+            height: 8px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: #333;
+            border-radius: 4px;
+        }
+
+        .java-progress {
+            width: 40%;
+        }
+
+        .python-progress {
+            width: 50%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Image.jpg" alt="Profile" class="profile-image">
+        <div class="name">WORAMET CHAEWCHAN</div>
+        <div class="role">นักศึกษา</div>
+    </div>
+
+    <div class="info-grid">
+        <div class="section">
+            <div class="section-title">ข้อมูลส่วนตัว</div>
+            <ul>
+                <li>ชื่อ-สกุล: วรเมธ เชี่ยวชาญ</li>
+                <li>ชื่อเล่น: โอ๊ค</li>
+                <li>วัน-เดือน-ปีเกิด: 17 สิงหาคม 2547</li>
+                <li>อายุ: 20 ปี</li>
+                <li>สัญชาติ: ไทย</li>
+                <li>เชื้อชาติ: ไทย</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">ช่องทางการติดต่อ</div>
+            <div class="contact-info">
+                <p>090-275-2938</p>
+                <p>worramet8@gmail.com</p>
+                <p>24/1 ถนน นิกรบำรุง อำเภอเมือง ตำบลในเมือง จังหวัดเพชรบูรณ์</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Programming Language</div>
+        <div>
+            <p>JAVA</p>
+            <div class="skill-bar">
+                <div class="skill-progress java-progress"></div>
+            </div>
+            <p>PYTHON</p>
+            <div class="skill-bar">
+                <div class="skill-progress python-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-grid">
+        <div class="section">
+            <div class="section-title">ทักษะ Skills</div>
+            <ul>
+                <li>Figma</li>
+                <li>Canva</li>
+                <li>Adobe illustrator</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">งานอดิเรก</div>
+            <ul>
+                <li>เล่นกีฬา</li>
+                <li>วาดรูป</li>
+                <li>ดูหนัง</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">ข้อมูลการศึกษา</div>
+        <ul>
+            <li>ประถมศึกษา: โรงเรียนประสิทธิ์วิทยา</li>
+            <li>มัธยมศึกษา ตอนต้น/ปลาย: โรงเรียนวิทยานุกูลนารี</li>
+            <li>อุดมศึกษา: มหาวิทยาลัยพะเยา</li>
+        </ul>
+    </div>
+</body>
+</html>
